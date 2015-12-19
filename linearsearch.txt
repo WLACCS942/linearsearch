@@ -1,0 +1,25 @@
+public class LinearSearch {
+     
+      public static void main(String args[])
+        {
+            int[] array= {23,45,21,55,2,1,34,90};
+            int key = 21; //value to be searched
+            int index;
+            boolean found = false;    // set the boolean value to false until the key is found
+
+            for ( index = 0; index < array.length; index++)
+            {
+                     if (array[index] == key)
+                     {
+                             found = true;    
+                             break;
+                     }
+            }
+
+            if (found)   //When found is true, the index of the location of key will be printed.
+                    System.out.println(key + " is found at index " + index );
+            else
+                    System.out.println(key + " is not found in the array.");         
+            }
+   
+      }
